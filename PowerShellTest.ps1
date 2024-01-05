@@ -8,7 +8,7 @@ try {
 }
 
 try {
-    Add-Type -Path ".\zure.Identity.dll"
+    Add-Type -Path ".\Azure.Identity.dll"
 } catch {
     $_.Exception.LoaderExceptions | ForEach-Object {
         Write-Host $_.Message
